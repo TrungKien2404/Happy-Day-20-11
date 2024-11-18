@@ -31,11 +31,19 @@ body {
   filter: blur(0.1vmin);
 }
 
-.happy-woman-day {
+.happy-day {
   color: white;
   font-size: 50px;
   position: fixed;
-  top: 80px;
+  animation: fadeIn 3s forwards, colorChange 2s infinite 0.5s;
+  top: 40px;
+}
+@keyframes colorChange {
+  0% { color: white; }
+  25% {color: yellow;}
+  50% { color: lightblue; }
+  75% {color: red;}
+  100% { color: white; }
 }
 
 .flowers {
